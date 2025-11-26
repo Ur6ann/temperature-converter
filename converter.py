@@ -1,4 +1,4 @@
-def add(a, b):
+def add(a, b):                                          # Temperature Converter v1.1
     """Додавання двох чисел"""
     return a + b
 def subtract(a, b):
@@ -11,8 +11,13 @@ def divide(a, b):
     """Ділення двох чисел"""
     if b != 0:
         return a / b
+def fahrenheit_to_kelvin(fahrenheit):
+    """Конвертує Фаренгейт у Кельвін"""
+    celsius = fahrenheit_to_celsius(fahrenheit)
+    return celsius_to_kelvin(celsius)
+        
     else:
-        return "Помилка: ділення на нуль!"
+    return "Помилка: ділення на нуль!"
 print("=== Простий калькулятор ===")
 print("Операції: +, -, *, /")
 print("Для виходу введіть 'exit'")
